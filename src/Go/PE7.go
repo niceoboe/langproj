@@ -35,12 +35,9 @@ func main(){
 func is_prime(num uint32) bool {
 	// Iterates from 3 up to the sqrt of the number + 1, because:
 	// If n is not divisible by any number from 0 to sqrt(n), then n is prime
-	// A "slice" must be made to make use of the range function
 	var start uint32 = 3
 	var end uint32 = uint32(math.Sqrt(float64(num))) + 1
 
-	// Here the range function is being used and the first returned value (the index) is being ignored
-	// This is denoted by using an underscore
 	for start <= end  {
 		if num % start == 0 {
 			return false
