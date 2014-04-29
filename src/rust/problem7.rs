@@ -27,8 +27,6 @@ fn main() {
 			println!("{:s}{:u}{:s}{:u}", "Prime number #", current_prime, " found: ", current_num);
 		}
 	}
-
-	println!("{:u}", current_num);
 }
 
 // Returns true if number is prime, false if number is not

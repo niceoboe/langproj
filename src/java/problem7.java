@@ -12,7 +12,7 @@ public class problem7 {
 		int currentPrime = 6;
 		int currentNum = 13;
 
-			// Keep going until we are at the target prime number
+		// Keep going until we are at the target prime number
 		while (currentPrime < targetPrime) {
 			// Increase the value of the current number that we are on by 2
 			// Increase by 2 because there is no sense in ever checking even numbers
