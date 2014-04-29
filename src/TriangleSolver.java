@@ -2,12 +2,12 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.reader;
 
 public class TriangleSolver {
 	
 	public TriangleSolver(String filename) throws FileNotFoundException {
-		Scanner fin = new Scanner(new BufferedReader(new FileReader(filename))); //input file
+		reader fin = new reader(new BufferedReader(new FileReader(filename))); //input file
 		String line;
 		triangle = new ArrayList<>();
 		String[] strArray; //Array of numbers in the row as a string

@@ -43,6 +43,8 @@ func main() {
     		values = append(values, val)
     	}
     	triangle = append(triangle, values)
+    	fmt.Print(triangle)
+
 	}
 	fmt.Printf("Largest sum of triangle: %v\n", collapseTriangle(triangle))
 }
