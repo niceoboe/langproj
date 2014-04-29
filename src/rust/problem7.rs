@@ -19,11 +19,11 @@ fn main() {
 	while current_prime < target_prime {
 		// Increase the value of the current number that we are on by 2
 		// Increase by 2 because there is no sense in ever checking even numbers
-		current_num+=2;
+		current_num += 2;
 
 		// If the current number is prime, increment the number of primes that we have hit
 		if is_prime(current_num) {
-			current_prime+=1;
+			current_prime += 1;
 			println!("{:s}{:u}{:s}{:u}", "Prime number #", current_prime, " found: ", current_num);
 		}
 	}
