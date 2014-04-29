@@ -1,5 +1,10 @@
-A Comparison of Programming Languages: Rust vs. Go
+\documentclass[12pt,letterpaper]{article}
 
+\usepackage{ifpdf}
+\usepackage{mla}
+\begin{document}
+
+\begin{mla}{Matt F, Kevin M, Nicholas N, Luis S}{}{Dr. S.}{Theory of Programming Languages}{\today}{A Comparison of Programming Languages: Rust vs. Go}
     Our group chose two emerging languages that have seen a rise in popularity over the past couple of years. We give a comparison between Rust and Go, and see which is the better choice of language to work with. We will look at readability, writability, reliability, and cost as a rubric. 
 
       Our overview on Go
@@ -20,18 +25,21 @@ Grade: 27/40
       Our overview on Rust
 
 Readability: 5
-	Rust, like Go, is a C-like language. Rust's syntax differs wildly in certain structures, though. For example, the method header "fn method_name(parameter_name: type) -> return_type {" is unusual and unique. Switch statements have been replaced with "match" statements which are cleaner than switch statements, but are strange.
+	Rust, like Go, is a C-like language. Rust's syntax differs wildly in certain structures, though. For example, the method header \texttt{fn method\_name(parameter\_name: type) -> return\_type \{<method body>\}} is unusual and unique. Switch statements have been replaced with "match" statements which are cleaner than switch statements, but are strange.
 Writability: 2
-	Rust's syntax is littered with special characters that make it daunting at a glance. Take, for example, the statement "println!("{:s}", "Hello World");", which may be one of the weirdest ways to do a Hello World program that we have seen in any language. Rust is also in an incredibly alpha-like state right now. For example, there is no native implementation of List. The user has to implement their own using enums.
+	Rust's syntax is littered with special characters that make it daunting at a glance. Take, for example, the statement \texttt{println!("\{:s\}", "Hello World");}, which may be one of the weirdest ways to do a Hello World program that we have seen in any language. Rust is also in an incredibly alpha-like state right now. For example, there is no native implementation of List. The user has to implement their own using enums.
 Reliability: 10
-	 As with most C-like languages, Rust is strongly-typed and explicit in its syntax. Rust is built from the ground up for concurrency, which is very finicky in most other languages. Rust has built-in data "channels" which it uses to communicate between threads in a multi-threaded program, and ensure that there are no race conditions. The language is designed to be bulletproof (or it will be, once it comes out of its current nightly release state).
+	 As with most C-like languages, Rust is strongly-typed and explicit in its syntax. Rust is built from the ground up for concurrency, which is very finicky in most other languages. Rust has built-in data ``channels'' which it uses to communicate between threads in a multi-threaded program, and ensure that there are no race conditions. The language is designed to be bulletproof (or it will be, once it comes out of its current nightly release state).
 Cost: 6
 	Rust is an open-source language backed by Mozilla, which is very encouraging for its future. However, the language in its current state is extremely lacking on resources. Even the normal Stack Overflow searches will usually fail to yield information, and when they do succeed, the information tends to be for an out-of-date Rust release. The only way to actually get up-to-date information is to crawl through the Rust mailing lists and hope you find what you need.
 Grade: 23/40
-	Rust is a language that I feel could easily get a rating of 30 or higher in a few years. The language is currently being developed at a very rapid pace, but unfortunately, at the moment, there are too few features present, too few resources for hopeful developers to learn from, and the information out there becomes invalid far too quickly. The syntax is also confusing and needs to be improved on (however, they are actively working on this. For example, between 0.10 and 0.11 nightly, they changed "num::sqrt(some_integer)" to "some_integer.sqrt()"). I'm very hopeful about Rust, but I can't give it a good score now, in light of all of its glaring flaws.
+	Rust is a language that I feel could easily get a rating of 30 or higher in a few years. The language is currently being developed at a very rapid pace, but unfortunately, at the moment, there are too few features present, too few resources for hopeful developers to learn from, and the information out there becomes invalid far too quickly. The syntax is also confusing and needs to be improved on (however, they are actively working on this. For example, between 0.10 and 0.11 nightly, they changed \texttt{num::sqrt(some\_integer)" to "some\_integer.sqrt()"}). I'm very hopeful about Rust, but I can't give it a good score now, in light of all of its glaring flaws.
 
 
 Matthew F.
 Kevin M.
 Nicholas N.
 Luis S.
+
+\end{mla}
+\end{document}
