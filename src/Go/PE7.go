@@ -26,9 +26,9 @@ func main(){
 		// If the current number is prime, increment the number of primes that we have hit
 		if is_prime(current_num) {
 			current_prime += 1;
+			fmt.Printf("%v%v%v%v\n", "Prime number #", current_prime, " found: ", current_num);
 		}
 	}
-	fmt.Printf("%v%v%v%v", "Prime number #", current_prime, " found: ", current_num);
 }
 
 // Returns true if number is prime, false if number is not
