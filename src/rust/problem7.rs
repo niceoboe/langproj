@@ -17,8 +17,9 @@ fn main() {
 
 	// Keep going until we are at the target prime number
 	while current_prime < target_prime {
-		// Increase the value of the current number that we are on
-		current_num+=1;
+		// Increase the value of the current number that we are on by 2
+		// Increase by 2 because there is no sense in ever checking even numbers
+		current_num+=2;
 
 		// If the current number is prime, increment the number of primes that we have hit
 		if is_prime(current_num) {
@@ -32,11 +33,6 @@ fn main() {
 
 // Returns true if number is prime, false if number is not
 fn is_prime(num: uint) -> bool {
-	// All even numbers are non-prime
-	if num % 2 == 0 {
-		return false;
-	}
-
 	// Iterates from 3 up to the sqrt of the number + 1, because:
 	// If n is not divisible by any number from 0 to sqrt(n), then n is prime
   	for i in range(3, (num as f64).sqrt() as uint + 1) {
