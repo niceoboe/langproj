@@ -10,23 +10,23 @@ import (
 func main(){
 	// The number of the prime we are trying to get
 	// This is a constant, as denoted by the "const" keyword
-	const target_prime uint32 = 1000000;
+	const target_prime uint32 = 1000000
 
 	// Use the info the problem gave; start with prime #6, which is 13
 	// These variables are mutable, as defined by the "var" keyword
-	var current_prime uint32 = 6;
-	var current_num uint32 = 13;
+	var current_prime uint32 = 6
+	var current_num uint32 = 13
 
 	// Keep going until we are at the target prime number
 	// Go doesn't have a "while" loop, but rather has a variant "for" loop to fulfill the same role
 	for current_prime < target_prime {
 		// Increase the value of the current number that we are on
-		current_num += 2;
+		current_num += 2
 
 		// If the current number is prime, increment the number of primes that we have hit
 		if is_prime(current_num) {
 			current_prime += 1;
-			fmt.Printf("%v%v%v%v\n", "Prime number #", current_prime, " found: ", current_num);
+			fmt.Printf("%v%v%v%v\n", "Prime number #", current_prime, " found: ", current_num)
 		}
 	}
 }
