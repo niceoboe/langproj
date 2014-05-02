@@ -1,12 +1,12 @@
  +--------------+------------------+---------------+-------------------+
  |   Language   |   Execution Time | Size in bytes | Memory usage (KB) |
  |              |                  |               |                   |
- |   C          |   12.982s        |  8528         |  268              |
- |   Go         |   16.323s        |  2244688      |  620              |
- |   Java       |   19.245s        |  916*         |  22000*           |
- |   C#         |   55.777s        |  3584         |  7132             |
- |   Rust       |   84.290s        |  1830460      |  436              |
- |   Python     |   415.10s        |  1235         |  3696             |
+ |   C          |   17.923s        |  8528         |  268              |
+ |   Go         |   22.660s        |  2244688      |  620              |
+ |   Java       |   26.401s        |  916*         |  22000*           |
+ |   Rust       |   40.261s        |  1830460      |  436              |
+ |   C#         |   56.105s        |  3584         |  7132             |
+ |   Python     |   478.33s        |  1235         |  3696             |
  +--------------+------------------+---------------+-------------------+
 
 Notes: 
@@ -17,3 +17,4 @@ Notes:
 	CPU: Core i5-4258U
 	RAM: 4GB 1600MHz DDR3
 	Latest versions of all compilers and runtimes used
+	All compilers used highest optimization level available (-O3 in gcc, --opt-level 3 in rustc, --optimize+ in mcs, etc)
